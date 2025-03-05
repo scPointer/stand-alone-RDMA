@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Mount essential filesystems
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+
+# Print a message
+echo "Welcome initramfs!"
+
+# Launch a shell
+exec /bin/sh
