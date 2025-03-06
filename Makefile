@@ -5,6 +5,8 @@ BUSYBOX_URL		= https://busybox.net/downloads/
 
 INITRD_IMG		= initrd.img
 
+all: qemu
+
 $(BUSYBOX_DIR):
 	@if [ ! -d "$(BUSYBOX_DIR)" ]; then \
 		echo "Directory $(BUSYBOX_DIR) not found. Downloading BusyBox"; \
